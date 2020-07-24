@@ -1,0 +1,13 @@
+<h1>Arrastrar y Soltar</h1>
+<h4>Lista de Países</h4>
+<hr />
+<div class="row mb-5">
+    <ul class="list-group" cdkDropList (cdkDropListDropped)="drop($event)">
+        <li class="list-group-item cajaDrop" *ngFor="let pais of paises" cdkDrag>{{ pais.name }}</li>
+    </ul>
+</div>
+
+
+<!-- <div class="caja" cdkDrag>
+    Arrastrar
+</div> -->
